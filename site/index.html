@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0b3a4f">
+  <meta name="description" content="پراید جزیره - رانندگی با پراید در یک جزیره استوایی | Pride Island - a 3D tropical island driving game">
+  <title>پراید جزیره | Pride Island</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #0b1d2a; overflow: hidden; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="ui-root"></div>
+
+  <div id="loading">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">در حال ساخت جزیره...</div>
+  </div>
+
+  <noscript>
+    <div style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:#0b1d2a;color:#fff;font-family:sans-serif;text-align:center;padding:24px;">
+      برای اجرای بازی «پراید جزیره» باید جاوااسکریپت فعال باشد.<br>Please enable JavaScript to play Pride Island.
+    </div>
+  </noscript>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

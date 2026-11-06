@@ -1,0 +1,8 @@
+﻿id,project,repo,demo,summary,tags,reactions
+1,perfect-ai,https://github.com/realjustawall/perfect-ai,,"مجموعه‌ای از بیش از ۳۱۰۰ مهارت طراحی و فرانت‌اند برای Codex، با پشتیبانی بومی از تایپوگرافی فارسی",AI|Frontend|Codex|Design,❤31 👍3
+2,Neo AI Bot,https://github.com/NeoTenet/Neo-Ai-Bot,,"ربات هوش مصنوعی چندمنظوره تلگرام روی Cloudflare Workers که سرور لازم ندارد؛ با بینایی تصویر، ساخت عکس و حافظه روی Upstash Redis",Telegram|Bot|Serverless|Cloudflare,🔥34 ❤9
+3,TWP-CF,https://github.com/MHDLabs/TWP-CF,,"پروکسی تحت وب تلگرام روی Cloudflare Workers که MTProto را با WebSocket و Durable Objects منتقل می‌کند",Telegram|Proxy|Cloudflare,❤32 👍5 🔥1
+4,tree-of-neuron,https://github.com/fermow/tree-of-neuron,https://fermow.github.io/tree-of-neuron,"درخت تعاملی تاریخچه علوم اعصاب با ۴۷ نقطه عطف",Visualization|Science|Web,❤37 👍1
+5,Smart Circuit Simulator,https://github.com/haedarfarhani/smart-circuit-simulator,https://haedarfarhani.github.io/smart-circuit-simulator,"شبیه‌ساز بی‌درنگ مدار الکتریکی در مرورگر با React و TypeScript، بوم نامحدود و اسیلوسکوپ",React|TypeScript|Simulation,❤43 👍5 🔥2 🍓1
+6,TwinDesk,https://github.com/inukaasith/twindesk,,"اشتراک موس، کیبورد، فایل و کلیپ‌بورد بین لپ‌تاپ، کامپیوتر و گوشی",Productivity|Multi-device,❤62 👍10 👎3
+7,FloMorphic,https://github.com/FloMorphic/getting-started,,"پلتفرم کم‌کد برای ساخت ایجنت روی زیرساخت خودتان؛ با پشتیبانی از MCP، RAG، حافظه پایدار و هماهنگی چندایجنتی",AI|Agents|MCP|RAG,
