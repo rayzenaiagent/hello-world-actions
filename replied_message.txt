@@ -1,0 +1,34 @@
+اجرا نشد. هیچ ریپویی ساخته نشده و هیچ ورک‌فلویی روی ⁦GitHub⁩ اجرا نشده.
+
+همهٔ اکشن‌های ⁦github_ops⁩ همین خطا رو می‌دن: ⁦UnicodeEncodeError: 'ascii' codec can't encode characters in position 7-9⁩. حتی ⁦trending⁩ و ⁦user_profile⁩ هم که به ریپوی تو ربطی ندارن خطا دادن. پس مشکل از ریپو یا ورک‌فلو نیست. حدسم اینه که توکن ذخیره‌شده توی ولت کاراکتر غیر ⁦ASCII⁩ داره. موقعیت ⁦۷⁩ تا ⁦۹⁩ درست بعد از ⁦Bearer ⁩ توی هدر ⁦Authorization⁩ می‌افته. این فقط حدسه و تأییدش نکردم.
+
+ورک‌فلو رو توی ورک‌اسپیس نوشتم، توی ⁦hello-world-actions/.github/workflows/hello.yml⁩:
+
+⁦name: Hello World
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Say hello
+        run: echo "Hello, World! from GitHub Actions"
+
+      - name: Show runner info
+        run: |
+          uname -a
+          date -u⁩
+
+دو راه داری:
+
+⁦1.⁩ توکن جدید بفرست تا از طریق ایمیل توی ولت بذارمش. ایمیل خودت رو بده، چون توی حافظه فقط ایمیل عرشیا هست. بعدش ریپو رو می‌سازم و ورک‌فلو رو تر ⁦igger⁩ می‌کنم.
+⁦2.⁩ فایل بالا رو خودت توی ریپو بذار، یعنی ⁦.github/workflows/hello.yml⁩. بعد از ⁦push⁩ خودش اجرا می‌شه، یا از تب ⁦Actions⁩ با ⁦Run workflow⁩ دستی بزنش.
+
+کدوم رو می‌خوای؟
